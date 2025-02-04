@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package Assignment2;
 
 abstract class Employee{
@@ -65,3 +66,38 @@ class Ques2{
 	}
 }
 
+=======
+package Assignment3;
+
+import java.util.*;
+public class Ques2 {
+
+	public static void main(String[] args) {
+		HashMap<Integer, String> map = new HashMap<>();
+		//Insert five student records
+		map.put(101,"Reshu");
+		map.put(102, "Vyshu");
+		map.put(103, "Yash");
+		map.put(104, "Rama");
+		map.put(105, "Jyosh");
+		
+		//Retrieve and display the name of a student using a specific roll number
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Roll Number : ");
+		int rn = sc.nextInt();
+		System.out.println(map.get(rn));
+		
+		//Remove a student entry using a roll number
+		System.out.println("Enter roll number that to be removed: ");
+		int rn1 = sc.nextInt();
+		map.remove(rn1);
+		
+		//Display all student records
+		for(Map.Entry<Integer,String> name : map.entrySet()) {
+			System.out.print(name.getValue()+ " ");
+		}
+
+	}
+
+}
+>>>>>>> a4860b3 (A3)

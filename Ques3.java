@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package Assignment2;
 
 class Vehicle{
@@ -35,4 +36,35 @@ class Ques3{
 		VehicleTestDrive(motorcycle);
 	}
 	
+=======
+package Assignment3;
+
+import java.util.*;
+
+public class Ques3 {
+
+	public static void main(String[] args) {
+		ArrayList<Integer> al = new ArrayList<>();
+		
+		//Add five integer elements to the list
+		al.add(1);
+		al.add(5);
+		al.add(10);
+		al.add(15);
+		al.add(20);
+		
+		//Remove the third element
+		al.remove(2);
+		
+		//Update the second element with a new value
+		al.set(1, 3);
+		
+		//Display all the elements using a loop
+		for(Integer n : al) {
+			System.out.print(n+" ");
+		}
+
+	}
+
+>>>>>>> a4860b3 (A3)
 }

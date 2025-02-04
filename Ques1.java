@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package Assignment2;
 
 class Item{
@@ -53,3 +54,48 @@ class Ques1{
 	}
 }
 
+=======
+package Assignment3;
+
+import java.util.*;
+
+public class Ques1 {
+
+	public static void main(String[] args) {
+		HashSet<String> hs = new HashSet<>();
+		
+		//Add five city names to the set
+		hs.add("Hyderabad");
+		hs.add("Mumbai");
+		hs.add("Pune");
+		hs.add("Chennai");
+		hs.add("Pune");
+		
+		//Display the elements to show that duplicates are not allowed
+		for(String city : hs) {
+			System.out.print(city + " ");
+		}
+		
+		//Check if a particular city exists in the set
+		System.out.println();
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a city :");
+		String city = sc.nextLine();
+		if(hs.contains(city)) {
+			System.out.println(city+" is there in the hashset");
+		}
+		else {
+			System.out.println(city+" is not there in the hashset");
+		}
+		
+		//Remove a city and display the updated set
+		hs.remove("Chennai");
+		System.out.println("HashSet after removing a city");
+		for(String cit : hs) {
+			System.out.print(cit+" ");
+		}
+
+	}
+
+}
+>>>>>>> a4860b3 (A3)
